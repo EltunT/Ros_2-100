@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/ros_project/ros_project.egg-info
+writing ../../build/ros_project/ros_project.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros_project/ros_project.egg-info/dependency_links.txt
+writing requirements to ../../build/ros_project/ros_project.egg-info/requires.txt
+writing top-level names to ../../build/ros_project/ros_project.egg-info/top_level.txt
+writing manifest file '../../build/ros_project/ros_project.egg-info/SOURCES.txt'
+reading manifest file '../../build/ros_project/ros_project.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros_project/ros_project.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/elt/ros2_ws_copy/build/ros_project/build
+creating /home/elt/ros2_ws_copy/build/ros_project/build/lib
+creating /home/elt/ros2_ws_copy/build/ros_project/build/lib/ros_project
+copying ros_project/__init__.py -> /home/elt/ros2_ws_copy/build/ros_project/build/lib/ros_project
+running install
+running install_lib
+creating /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project
+copying /home/elt/ros2_ws_copy/build/ros_project/build/lib/ros_project/__init__.py -> /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project
+byte-compiling /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/elt/ros2_ws_copy/install/ros_project/share/ament_index
+creating /home/elt/ros2_ws_copy/install/ros_project/share/ament_index/resource_index
+creating /home/elt/ros2_ws_copy/install/ros_project/share/ament_index/resource_index/packages
+copying resource/ros_project -> /home/elt/ros2_ws_copy/install/ros_project/share/ament_index/resource_index/packages
+copying package.xml -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project
+creating /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/launch
+copying launch/view_robot.launch.py -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/launch
+creating /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+copying rviz/robot2.rviz -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+copying rviz/robot_ros1_backup.rviz -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+copying rviz/robot.rviz -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+creating /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/macros.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/my_robots_super_model.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/materials.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/wheel.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/quad_drive_robot.gazebo.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/inertial.urdf.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/manipulator.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+copying urdf/quad_drive_robot.urdf.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+running install_egg_info
+Copying ../../build/ros_project/ros_project.egg-info to /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/elt/ros2_ws_copy/build/ros_project/install.log'

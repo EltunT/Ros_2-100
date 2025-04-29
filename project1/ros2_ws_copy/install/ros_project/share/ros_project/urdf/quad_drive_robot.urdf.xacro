@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="my_robot">
+
+    <xacro:property name="link_thickness" value="0.03" />
+    <xacro:property name="link_length"    value="0.1" />
+    <xacro:property name="wheel_diameter" value="0.1" />
+    <xacro:property name="wheel_length"   value="0.03" />
+
+    <xacro:include filename="$(find ros_project)/urdf/materials.xacro" />
+    <xacro:include filename="$(find ros_project)/urdf/macros.xacro" />
+    <xacro:include filename="$(find ros_project)/urdf/inertial.urdf.xacro" />
+    <xacro:include filename="$(find ros_project)/urdf/quad_drive_robot.gazebo.xacro" />
+
+    <origin xyz="0 0 0" rpy="0 0 0" />
+
+    <link name='base_link'>
+        <visual name='base_visual'>
+            <origin xyz="0 0 0.045" rpy="0 0 0" />
+            <geometry>
+                <box size="0.2 0.14 0.09" />
+            </geometry>
+        </visual>
+
+        <xacro:inertial_box mass="30" x="0.2" y="0.14" z="0.09">
+            <origin xyz="0 0 0.045" rpy="0 0 0" />
+        </xacro:inertial_box>
+
+        <collision>
+            <origin xyz="0 0 0.045" rpy="0 0 0" />
+            <geometry>
+                <box size="0.2 0.14 0.09" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Колёса -->
+    <xacro:wheel side="front_left"  x="-0.07" y="${0.07 + (wheel_length/2)}"  z="${wheel_diameter/3}" />
+    <xacro:wheel side="front_right" x="-0.07" y="-${0.07 + (wheel_length/2)}" z="${wheel_diameter/3}" />
+    <xacro:wheel side="back_left"   x="0.07"  y="${0.07 + (wheel_length/2)}"  z="${wheel_diameter/3}" />
+    <xacro:wheel side="back_right"  x="0.07"  y="-${0.07 + (wheel_length/2)}" z="${wheel_diameter/3}" />
+
+    <!-- Камера -->
+    <link name='camera'>
+        <visual name='camera_visual'>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+            <material name="yellow" />
+        </visual>
+    </link>
+    <joint type="fixed" name="camera_joint">
+        <origin xyz="0.1 -0.02 0.06" rpy="0 0 0" />
+        <child link="camera" />
+        <parent link="base_link" />
+    </joint>
+
+    <!-- Лидар -->
+    <link name="lidar">
+        <visual name='lidar_visual'>
+            <origin xyz="0 0 0" rpy="${pi/2} 0 0" />
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+            <material name="yellow" />
+        </visual>
+    </link>
+    <joint name="lidar_joint" type="fixed">
+        <origin xyz="0.1 0.02 0.06" rpy="0 0 0" />
+        <child link="lidar" />
+        <parent link="base_link" />
+    </joint>
+
+</robot>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<robot>
+  <gazebo reference="camera">
+    <sensor type="camera" name="main_camera">
+      <update_rate>25</update_rate>
+      <camera>
+        <!-- Разрешение камеры: 1024 x 960 -->
+        <image>
+          <width>1024</width>
+          <height>960</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+      </camera>
+      <plugin name="camera_plugin" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>quad_wheel_robot/camera</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="lidar">
+    <sensor type="ray" name="main_lidar">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>40</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.785</min_angle>
+            <max_angle>0.785</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <!-- 0.03..3.0 вместо 0.04..4.0 -->
+          <min>0.03</min>
+          <max>3.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+      <plugin name="lidar_plugin" filename="libgazebo_ros_laser.so">
+        <topicName>/quad_wheel_robot/laser</topicName>
+        <frameName>lidar</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Плагин ros_control -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/quad_wheel_robot</robotNamespace>
+    </plugin>
+  </gazebo>
+</robot>

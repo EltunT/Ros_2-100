@@ -1,0 +1,47 @@
+[0.613s] Invoking command in '/home/elt/ros2_ws_copy/src/ros_project': PYTHONPATH=/home/elt/ros2_ws_copy/build/ros_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_project build --build-base /home/elt/ros2_ws_copy/build/ros_project/build install --record /home/elt/ros2_ws_copy/build/ros_project/install.log --single-version-externally-managed install_data
+[0.810s] running egg_info
+[0.810s] creating ../../build/ros_project/ros_project.egg-info
+[0.824s] writing ../../build/ros_project/ros_project.egg-info/PKG-INFO
+[0.825s] writing dependency_links to ../../build/ros_project/ros_project.egg-info/dependency_links.txt
+[0.825s] writing requirements to ../../build/ros_project/ros_project.egg-info/requires.txt
+[0.825s] writing top-level names to ../../build/ros_project/ros_project.egg-info/top_level.txt
+[0.825s] writing manifest file '../../build/ros_project/ros_project.egg-info/SOURCES.txt'
+[0.856s] reading manifest file '../../build/ros_project/ros_project.egg-info/SOURCES.txt'
+[0.856s] writing manifest file '../../build/ros_project/ros_project.egg-info/SOURCES.txt'
+[0.857s] running build
+[0.857s] running build_py
+[0.857s] creating /home/elt/ros2_ws_copy/build/ros_project/build
+[0.857s] creating /home/elt/ros2_ws_copy/build/ros_project/build/lib
+[0.857s] creating /home/elt/ros2_ws_copy/build/ros_project/build/lib/ros_project
+[0.858s] copying ros_project/__init__.py -> /home/elt/ros2_ws_copy/build/ros_project/build/lib/ros_project
+[0.858s] running install
+[0.863s] running install_lib
+[0.877s] creating /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project
+[0.877s] copying /home/elt/ros2_ws_copy/build/ros_project/build/lib/ros_project/__init__.py -> /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project
+[0.878s] byte-compiling /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project/__init__.py to __init__.cpython-312.pyc
+[0.879s] running install_data
+[0.879s] creating /home/elt/ros2_ws_copy/install/ros_project/share/ament_index
+[0.879s] creating /home/elt/ros2_ws_copy/install/ros_project/share/ament_index/resource_index
+[0.879s] creating /home/elt/ros2_ws_copy/install/ros_project/share/ament_index/resource_index/packages
+[0.879s] copying resource/ros_project -> /home/elt/ros2_ws_copy/install/ros_project/share/ament_index/resource_index/packages
+[0.880s] copying package.xml -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project
+[0.880s] creating /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/launch
+[0.880s] copying launch/view_robot.launch.py -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/launch
+[0.880s] creating /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+[0.882s] copying rviz/robot2.rviz -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+[0.882s] copying rviz/robot_ros1_backup.rviz -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+[0.882s] copying rviz/robot.rviz -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/rviz
+[0.882s] creating /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.882s] copying urdf/macros.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.882s] copying urdf/my_robots_super_model.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.882s] copying urdf/materials.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.883s] copying urdf/wheel.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.883s] copying urdf/quad_drive_robot.gazebo.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.883s] copying urdf/inertial.urdf.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.883s] copying urdf/manipulator.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.883s] copying urdf/quad_drive_robot.urdf.xacro -> /home/elt/ros2_ws_copy/install/ros_project/share/ros_project/urdf
+[0.884s] running install_egg_info
+[0.899s] Copying ../../build/ros_project/ros_project.egg-info to /home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages/ros_project-0.0.0-py3.12.egg-info
+[0.900s] running install_scripts
+[0.993s] writing list of installed files to '/home/elt/ros2_ws_copy/build/ros_project/install.log'
+[1.012s] Invoked command in '/home/elt/ros2_ws_copy/src/ros_project' returned '0': PYTHONPATH=/home/elt/ros2_ws_copy/build/ros_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elt/ros2_ws_copy/install/ros_project/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros_project build --build-base /home/elt/ros2_ws_copy/build/ros_project/build install --record /home/elt/ros2_ws_copy/build/ros_project/install.log --single-version-externally-managed install_data
